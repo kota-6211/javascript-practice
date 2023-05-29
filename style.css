@@ -1,45 +1,15 @@
 @charset "UTF-8";
 
-.box {
-  display: flex;
+.swiper {
+  width: 600px;
+  height:300px;
 }
 
-.box1 {
-  display: none;
-  height: 200px;
-  width: 200px;
-  background-color: red;
+img {
+  width: 100%;
 }
 
-.box2 {
-  height: 200px;
-  width: 200px;
-  background-color: orange;
-}
-
-.box3 {
-  height: 200px;
-  width: 200px;
-}
-
-.box2-ext {
-  height: 200px;
-  width: 200px;
-  background-color: green;
-}
-
-.bg1 {
-  background-color: pink;
-}
-
-.bg2 {
-  background-color:purple;
-}
-
-.bg3 {
-  background-color: yellow;
-}
-
-.bg4 {
-  background-color:black;
+:root {
+  --swiper-navigation-color: #ffffff;
+  --swiper-pagination-color: #ffffff;
 }

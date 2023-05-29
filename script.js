@@ -202,30 +202,49 @@
 // let kaibun = prompt("name");
 // string(kaibun);
 
-$(function() {
-    $('.box1').slideDown(3000,function() {
-        $('.box1').css({
-        'width': '200px',
-        'height': '200px',
-        'background-color': 'blue'
-        }).slideUp(500);
-    });
-});
+// $(function() {
+//     $('.box1').slideDown(3000,function() {
+//         $('.box1').css({
+//         'width': '200px',
+//         'height': '200px',
+//         'background-color': 'blue'
+//         }).slideUp(500);
+//     });
+// });
 
-$(function(){
-    $('.box2').on('click', function(){
-        $('.box2').addClass('box2-ext');
-    });
-    $('.box2').on('click', function() {
-        $('.box2').slideUp(1000, function(){
-            $('.box2').removeClass('box2-ext');
-        });
-    });
-});
+// $(function(){
+//     $('.box2').on('click', function(){
+//         $('.box2').addClass('box2-ext');
+//     });
+//     $('.box2').on('click', function() {
+//         $('.box2').slideUp(1000, function(){
+//             $('.box2').removeClass('box2-ext');
+//         });
+//     });
+// });
 
-$(function() {
-    $('.box3').on('click', function() {
-        $(this).slideUp();
-    });
-});
+// $(function() {
+//     $('.box3').on('click', function() {
+//         $(this).slideUp();
+//     });
+// });
 
+
+// $(function() {
+//     $('button').on('click', function() {
+//         $('ul').children().css('color','red');
+//     });
+// });
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    
+    pagination: {
+        el:'.swiper-pagination',
+    },
+    
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});

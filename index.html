@@ -2,20 +2,35 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--<div class="box">-->
-    <!--  <div class="box1"></div>-->
-    <!--  <div class="box2"></div>-->
-    <!--</div>-->
-    <!--<div class="box">-->
-    <!--  <div class="box3 bg1"></div>-->
-    <!--  <div class="box3 bg2"></div>-->
-    <!--  <div class="box3 bg3"></div>-->
-    <!--  <div class="box3 bg4"></div>-->
-    <!--</div>-->
-
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/nature-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/nature-2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/nature-3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/nature-4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/nature-5.jpg" alt="">
+        </div>
+      </div>
+      <!-- ページネーションの要素 -->
+      <div class="swiper-pagination"></div>
+      <!-- ナビゲーションボタン （前、次） -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
       <script src="jquery.min.js"></script>
       <script src="script.js"></script>
   </body>
